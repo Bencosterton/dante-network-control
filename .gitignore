@@ -1,7 +1,0 @@
-*.pyc
-.eggs
-.sw*
-dist/
-__pycache__
-debug.log
-.hypothesis/

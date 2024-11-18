@@ -1,9 +1,9 @@
 Thank you chris-ritsen for creating network-audio-controller -> (https://github.com/chris-ritsen/network-audio-controller)
 
 This fork focuses on using network-audio-controller as part of a wider control system ecosystem.
-Emphasis has been given to reintroducing ability to narrow down command focus, and stipping down the terminal out some what meaning easier parsing of the interformation.
+Emphasis has been given to reintroducing the ability to narrow down command focus, and stipping down the terminal out somewhat meaning easier parsing of the information.
 
-Example reintroducing te ability to quiery te subscription status of a single device or channel;
+Example reintroducing the ability to query the subscription status of a single device or channel;
 
 
 
@@ -27,7 +27,7 @@ class SubscriptionListCommand(Command):
 
 
 Also attention has been made to reduce cli output, making it easier and quicker to parse information for systems using netaudio;
-Bellow chnages to dante/browser.py
+Bellow changes to dante/browser.py
 ```python
 @contextlib.contextmanager
 def suppress_stderr():
@@ -80,3 +80,5 @@ netaudio subscription list = list all subscriptions on network, now wil options 
 netaudio subscription remove = remove a subscription (netaudio subscription remove --rx-channel-name=10 --rx-device-name="A32")
 netaudio subscription add = add a subscription (netaudio subscription add --tx-device-name="Artist-Artist-64-2-Bay-5" --tx-channel-name="02" --rx-channel-name="01" --rx-device-name="A32"
 ```
+
+

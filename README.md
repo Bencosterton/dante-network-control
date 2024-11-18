@@ -1,7 +1,7 @@
 Thank you chris-ritsen for creating network-audio-controller -> (https://github.com/chris-ritsen/network-audio-controller)
 
-This fork focuses on using network-audio-controller as part of a wider control system ecosystem.
-Emphasis has been given to reintroducing the ability to narrow down command focus, and stipping down the terminal out somewhat meaning easier parsing of the information.
+This fork focuses on using network-audio-controller as part of a wider control ecosystem.
+Emphasis has been given to reintroducing the ability to narrow down command focus, and stipping down the terminal output somewhat meaning easier parsing of the information.
 
 Example reintroducing the ability to query the subscription status of a single device or channel;
 

@@ -9,7 +9,7 @@ def configure_logging():
     netaudio_logger = logging.getLogger("netaudio")
     netaudio_logger.setLevel(logging.INFO)
     
-    # Completely silence zeroconf
+    # zeroconf displays an unholy amount of mDNS errors, despite it working, so I shall mute logging here.
     logging.getLogger("zeroconf").setLevel(logging.CRITICAL)
     logging.getLogger("zeroconf.asyncio").setLevel(logging.CRITICAL)
     
@@ -25,14 +25,14 @@ def configure_logging():
             ]
             return not any(msg in record.msg for msg in unwanted_messages)
     
-    # Configure handlers
-    handler = logging.StreamHandler(sys.stdout)  # Use stdout instead of stderr
+    # reduce output mesaaging
+    handler = logging.StreamHandler(sys.stdout) 
     handler.setLevel(logging.INFO)
     handler.addFilter(MessageFilter())
-    formatter = logging.Formatter('%(message)s')  # Simple format, just the message
+    formatter = logging.Formatter('%(message)s')  
     handler.setFormatter(formatter)
     
-    # Remove any existing handlers
+    # I personally don't think this is useful to end-user, it's gone
     netaudio_logger.handlers = []
     netaudio_logger.addHandler(handler)
     

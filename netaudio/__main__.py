@@ -10,7 +10,7 @@ def handler(signum, frame):
 if __name__ == "__main__":
     from netaudio.console.application import main
 
-    # Configure logging before starting the application
+    # This is the logging to hopefully reduce unnecessary cli output
     configure_logging()
     
     signal.signal(signal.SIGINT, handler)

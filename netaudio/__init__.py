@@ -10,7 +10,7 @@ from .dante.subscription import DanteSubscription
 from .console.application import main
 
 __author__ = "Chris Ritsen"
-__maintainer__ = "Chris Ritsen <chris.ritsen@gmail.com>"
+__maintainer__ = "Ben Costerton <bencosterton@gmail.com>"
 
 if sys.version_info <= (3, 9):
     raise ImportError("Python version > 3.9 required.")

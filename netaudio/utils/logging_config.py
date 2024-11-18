@@ -13,10 +13,10 @@ def configure_logging():
     logging.getLogger("zeroconf").setLevel(logging.CRITICAL)
     logging.getLogger("zeroconf.asyncio").setLevel(logging.CRITICAL)
     
-    # Create a custom filter to remove specific messages
+    # This is the filtering of messages in terminal output
     class MessageFilter(logging.Filter):
         def filter(self, record):
-            # Filter out mDNS timeout messages and other unwanted messages
+            # List of messages I don't like.
             unwanted_messages = [
                 "timed out getting mDNS service",
                 "Failed to get a service by type",

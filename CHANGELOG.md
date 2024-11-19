@@ -5,4 +5,4 @@
 - Removed a fair bit of mDNS output to clean up terminal
 - Removed the connection status appended to the end of all subscription messages
 - Added logging_config.py to __main__ to reduce the amount of cli output from netaudio
-- Cleaned up the SIGPIPE error so it runs smoother on Windows systems out the box
+- Cleaned up the SIGPIPE handling so it runs smoother on Windows systems out the box

@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "netaudio"
-version = "0.2.0"
+version = "0.0.2"
 description = "List, configure, and control Dante network audio devices without Dante Controller"
 authors = ["Christopher Ritsen <chris.ritsen@gmail.com>"]
 license = "MIT"
